@@ -24,7 +24,7 @@ def extract_features(image, max_feature_length):
     # Convert the image to grayscale
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-    # Apply a feature extraction algorithm (e.g., SIFT, SURF, etc.)
+    # Apply a feature extraction algorithm
     feature_extractor = cv2.SIFT_create()
     keypoints, descriptors = feature_extractor.detectAndCompute(gray, None)
 
@@ -63,7 +63,7 @@ def perspective_transformation(image, transformation_matrix):
     return transformed_image
 
 
-#Function for extracting features from an image
+# Function for extracting features from an image
 def extract_features(image, max_feature_length):
     # Convert the image to grayscale
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -89,7 +89,7 @@ def extract_features(image, max_feature_length):
     return feature_vector
 
 
-#Function for detecting and matching features
+# Function for detecting and matching features
 def determine_max_feature_length(train_folder):
     max_feature_length = 0
 
@@ -106,7 +106,7 @@ def determine_max_feature_length(train_folder):
     return max_feature_length
 
 
-#Function for finding the ROI in the images
+# Function for finding the ROI in the images
 def find_roi(image):
     # Convert the image to grayscale.
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
