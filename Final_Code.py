@@ -262,9 +262,9 @@ def register_images(train_folder, validation_folder, output_folder):
 
 def main():
   
-    train_folder = r"C:\Users\mikip\OneDrive\Desktop\Ennovate\DataSet\Train_Images"
-    validation_folder = r"C:\Users\mikip\OneDrive\Desktop\Ennovate\DataSet\Valid_Images"
-    output_folder = r"C:\Users\mikip\OneDrive\Desktop\Ennovate\output"
+    train_folder = r"C:\Users\mikip\OneDrive\Desktop\Ennovate\DataSet\Train_Images"  # Path to your train folder 
+    validation_folder = r"C:\Users\mikip\OneDrive\Desktop\Ennovate\DataSet\Valid_Images"   # Path to your valid folder
+    output_folder = r"C:\Users\mikip\OneDrive\Desktop\Ennovate\output"    # Path to your output folder (where you want to save the final_validation)
 
     accuracy, precision, recall = register_images(train_folder, validation_folder, output_folder)
 
@@ -275,3 +275,11 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# Open a new terminal and type : python .\Final_Code.py    
+# The scores after training the model were: 
+# Accuracy: 52
+# Precision: 3
+# Recall: 3
+
