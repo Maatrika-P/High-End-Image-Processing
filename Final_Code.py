@@ -275,8 +275,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
 # Open a new terminal and type : python .\Final_Code.py    
 # The scores after training the model were: 
 # Accuracy: 52
